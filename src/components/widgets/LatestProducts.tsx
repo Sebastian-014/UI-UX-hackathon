@@ -13,8 +13,8 @@ const LatestProducts = () => {
         <>
             <section>
                 <Wrapper>
-                    <h1 className="flex justify-center items-center text-myblue text-[42px] font-bold pt-36">Leatest Products</h1>
-                    <div className="space-y-10 pt-8">
+                    <h1 className="flex justify-center items-center text-myblue text-[42px] font-bold pt-40">Leatest Products</h1>
+                    <div className="space-y-10 pt-10">
                         {/* First Row */}
                         <div>
                             <div className="flex justify-center gap-x-6">

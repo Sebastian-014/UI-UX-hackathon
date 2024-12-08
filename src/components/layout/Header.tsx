@@ -10,6 +10,7 @@ const Header = () => {
                     <h1 className="text-[34px] font-bold">Hekto</h1>
 
                     <div>
+                        <nav>
                         <ul className="flex gap-x-8 text-[16px]">
                             <Link href="/"><li className="hover:text-mypink">Home</li></Link>
                             <Link href="/pages"><li className="hover:text-mypink">Pages</li></Link>
@@ -18,6 +19,7 @@ const Header = () => {
                             <Link href="/shop"><li className="hover:text-mypink">Shop</li></Link>
                             <Link href="/contact"><li className="hover:text-mypink">Contact</li></Link>
                         </ul>
+                        </nav>
                     </div>
                 </div>
 

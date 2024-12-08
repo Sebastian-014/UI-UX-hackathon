@@ -11,8 +11,8 @@ const Featured = () => {
         <>
             <section>
                 <Wrapper>
-                    <h1 className="flex justify-center items-center text-myblue1 text-[42px] font-bold pt-36">Featured Products</h1>
-                    <div className="flex justify-center gap-x-6 pt-8">
+                    <h1 className="flex justify-center items-center text-myblue1 text-[42px] font-bold pt-40">Featured Products</h1>
+                    <div className="flex justify-center gap-x-6 pt-10">
 
                         <div className="w-[270px] h-[361px] border rounded-md shadow-md cursor-pointer">
                             <div className=" bg-gray6 h-[236px] w-[270px] flex justify-center items-center">
