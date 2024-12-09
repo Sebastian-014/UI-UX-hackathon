@@ -16,7 +16,7 @@ const SupportSection = () => {
 
                     <div className="flex justify-center gap-x-4 pt-10" >
 
-                        <div className="w-[270px] h-[320px] rounded-md shadow-md space-y-8 pt-12">
+                        <div className="w-[270px] h-[320px] rounded-md cursor-pointer shadow-md space-y-8 pt-12">
                             <div className="flex justify-center items-center">
                                 <Image src={SupportImage1} alt="support-image" className=" h-[60px] w-[65px]" />
                             </div>
@@ -24,7 +24,7 @@ const SupportSection = () => {
                             <p className="text-gray2 text-bold text[16px] flex justify-center items-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                         </div>
 
-                        <div className="w-[270px] h-[320px] rounded-md shadow-md space-y-8 pt-12">
+                        <div className="w-[270px] h-[320px] rounded-md cursor-pointer shadow-md space-y-8 pt-12">
                             <div className="flex justify-center items-center">
                                 <Image src={SupportImage2} alt="support-image" className=" h-[65px] w-[65px]" />
                             </div>
@@ -32,7 +32,7 @@ const SupportSection = () => {
                             <p className="text-gray2 text-bold text[16px] flex justify-center items-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                         </div>
 
-                        <div className="w-[270px] h-[320px] rounded-md shadow-md space-y-8 pt-12">
+                        <div className="w-[270px] h-[320px] rounded-md cursor-pointer shadow-md space-y-8 pt-12">
                             <div className="flex justify-center items-center">
                                 <Image src={SupportImage3} alt="support-image" className=" h-[65px] w-[65px]" />
                             </div>
@@ -40,7 +40,7 @@ const SupportSection = () => {
                             <p className="text-gray2 text-bold text[16px] flex justify-center items-center mx-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa purus gravida.</p>
                         </div>
 
-                        <div className="w-[270px] h-[320px] rounded-md shadow-md space-y-8 pt-12">
+                        <div className="w-[270px] h-[320px] rounded-md cursor-pointer shadow-md space-y-8 pt-12">
                             <div className="flex justify-center items-center">
                                 <Image src={SupportImage4} alt="support-image" className=" h-[65px] w-[65px]" />
                             </div>

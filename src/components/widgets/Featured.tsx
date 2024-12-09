@@ -14,7 +14,7 @@ const Featured = () => {
                     <h1 className="flex justify-center items-center text-myblue1 text-[42px] font-bold pt-40">Featured Products</h1>
                     <div className="flex justify-center gap-x-6 pt-10">
 
-                        <div className="w-[270px] h-[361px] border rounded-md shadow-md cursor-pointer">
+                        <div className="w-[270px] h-[361px] border rounded-md shadow-lg cursor-pointer hover:scale-105 duration-100">
                             <div className=" bg-gray6 h-[236px] w-[270px] flex justify-center items-center">
                                 <div>
                                     <Image src={FeaturedImage1} alt="featured-image" className=" h-[178px] w-[178px]" />
@@ -30,7 +30,7 @@ const Featured = () => {
 
                         </div>
 
-                        <div className="w-[270px] h-[361px] border rounded-md shadow-md cursor-pointer">
+                        <div className="w-[270px] h-[361px] border rounded-md shadow-lg cursor-pointer hover:scale-105 duration-100">
                             <div className=" bg-gray6 h-[236px] w-[270px] flex justify-center items-center">
                                 <div>
                                     <Image src={FeaturedImage2} alt="featured-image" className=" h-[178px] w-[178px]" />
@@ -46,7 +46,7 @@ const Featured = () => {
 
                         </div>
 
-                        <div className="w-[270px] h-[361px] border rounded-md shadow-md cursor-pointer">
+                        <div className="w-[270px] h-[361px] border rounded-md shadow-lg cursor-pointer hover:scale-105 duration-100">
                             <div className=" bg-gray6 h-[236px] w-[270px] flex justify-center items-center">
                                 <div>
                                     <Image src={FeaturedImage3} alt="featured-image" className=" h-[178px] w-[178px]" />
@@ -62,7 +62,7 @@ const Featured = () => {
 
                         </div>
 
-                        <div className="w-[270px] h-[361px] border rounded-md shadow-md cursor-pointer">
+                        <div className="w-[270px] h-[361px] border rounded-md shadow-lg cursor-pointer hover:scale-105 duration-100">
                             <div className=" bg-gray6 h-[236px] w-[270px] flex justify-center items-center">
                                 <div>
                                     <Image src={FeaturedImage4} alt="featured-image" className=" h-[178px] w-[178px]" />

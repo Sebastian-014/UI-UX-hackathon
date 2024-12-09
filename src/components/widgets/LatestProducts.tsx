@@ -14,12 +14,20 @@ const LatestProducts = () => {
             <section>
                 <Wrapper>
                     <h1 className="flex justify-center items-center text-myblue text-[42px] font-bold pt-40">Leatest Products</h1>
-                    <div className="space-y-10 pt-10">
+                    <div className="flex justify-center pt-4">
+                        <ul className="flex gap-x-14">
+                            <li className="text-[18px] text-myblue hover:text-mypink hover:underline cursor-pointer">New Arrival</li>
+                            <li className="text-[18px] text-myblue hover:text-mypink hover:underline cursor-pointer">Best Seller</li>
+                            <li className="text-[18px] text-myblue hover:text-mypink hover:underline cursor-pointer">Featured</li>
+                            <li className="text-[18px] text-myblue hover:text-mypink hover:underline cursor-pointer">Special Offer</li>
+                        </ul>
+                    </div>
+                    <div className="space-y-10 pt-14">
                         {/* First Row */}
                         <div>
                             <div className="flex justify-center gap-x-6">
 
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
+                                <div className="h-[306px] w-[360px] border rounded-md shadow-md cursor-pointer hover:scale-105 duration-100">
                                     <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
                                         <div>
                                             <Image src={LatestProduct1} alt="latestproduct-image" className=" h-[229px] w-[223px]" />
@@ -36,7 +44,7 @@ const LatestProducts = () => {
 
                                 </div>
 
-                                <div className="h-[306px] w-[360px] cursor-pointer">
+                                <div className="h-[306px] w-[360px] cursor-pointer shadow-md hover:scale-105 duration-100">
                                     <div className="h-[270px] w-[360px] bg-white flex justify-center items-center">
                                         <div>
                                             <Image src={LatestProduct2} alt="latestproduct-image" className=" h-[245px] w-[245px]" />
@@ -53,7 +61,7 @@ const LatestProducts = () => {
 
                                 </div>
 
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
+                                <div className="h-[306px] w-[360px] border rounded-md shadow-md cursor-pointer hover:scale-105 duration-100">
                                     <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
                                         <div>
                                             <Image src={LatestProduct3} alt="latestproduct-image" className=" h-[222px] w-[222px]" />
@@ -80,7 +88,7 @@ const LatestProducts = () => {
 
                             <div className="flex justify-center gap-x-6">
 
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
+                                <div className="h-[306px] w-[360px] border rounded-md shadow-md cursor-pointer hover:scale-105 duration-100">
                                     <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
                                         <div>
                                             <Image src={LatestProduct4} alt="latestproduct-image" className=" h-[267px] w-[277px]" />
@@ -97,7 +105,7 @@ const LatestProducts = () => {
 
                                 </div>
 
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
+                                <div className="h-[306px] w-[360px] border rounded-md shadow-md cursor-pointer hover:scale-105 duration-100">
                                     <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
                                         <div>
                                             <Image src={LatestProduct5} alt="latestproduct-image" className=" h-[303px] w-[264px]" />
@@ -114,7 +122,7 @@ const LatestProducts = () => {
 
                                 </div>
 
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
+                                <div className="h-[306px] w-[360px] border rounded-md shadow-md cursor-pointer hover:scale-105 duration-100">
                                     <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
                                         <div>
                                             <Image src={LatestProduct6} alt="latestproduct-image" className=" h-[229px] w-[223px]" />

@@ -8,10 +8,10 @@ import Image from "next/image"
 const Hero = () => {
   return (
     <section>
-      <div className="flex justify-between items-center h-[783px] w-full bg-gray5 px-10 relative">
+      <div className="flex justify-between items-center h-[783px] w-full bg-gray5 px-10 relative pt-40">
 
         <div>
-          <Image src={HeroImage2} alt="hero-image" className=" h-[200px] w-[200px] absolute top-0" />
+          <Image src={HeroImage2} alt="hero-image" className=" h-[300px] w-[200px] absolute top-0" />
         </div>
 
         <div className="max-w-[644px] space-y-3">

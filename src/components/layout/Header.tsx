@@ -5,7 +5,7 @@ import { FiSearch } from "react-icons/fi"
 const Header = () => {
     return (
         <>
-            <div className="bg-white w-full px-10 flex flex-1 justify-between items-center h-[65px]">
+            <div className="bg-white w-full px-10 flex flex-1 justify-between items-center h-[65px] fixed top-10 z-10">
                 <div className="flex items-center gap-x-14 py-4">
                     <h1 className="text-[34px] font-bold">Hekto</h1>
 
