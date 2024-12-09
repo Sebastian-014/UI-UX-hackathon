@@ -13,6 +13,7 @@ const config: Config = {
         mywhite: "#F1F1F1",
         mypink: "#FB2E86",
         pink2:  "#ECD2FA",
+        pink3:  "#FFF6FB",
         myblue: "#151875",
         myblue1: "#1A0B5B",
         myred:  "#FB2448",

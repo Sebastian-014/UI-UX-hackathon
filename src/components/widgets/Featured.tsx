@@ -22,9 +22,9 @@ const Featured = () => {
                             </div>
 
                             <div className="space-y-2 pt-4">
-                                <h2 className="flex justify-center items-center text-[18px] text-mypink font-bold ">Cantilever chair</h2>
-                                <h4 className="flex justify-center items-center text-[14px] text-myblue">Code - Y523201</h4>
-                                <h4 className="flex justify-center items-center text-[14px] text-myblue">$42.00</h4>
+                                <h4 className="flex justify-center items-center text-[18px] text-mypink font-bold ">Cantilever chair</h4>
+                                <span className="flex justify-center items-center text-[14px] text-myblue">Code - Y523201</span>
+                                <span className="flex justify-center items-center text-[14px] text-myblue">$42.00</span>
 
                             </div>
 
@@ -38,9 +38,9 @@ const Featured = () => {
                             </div>
 
                             <div className="space-y-2 pt-4">
-                                <h2 className="flex justify-center items-center text-[18px] text-mypink font-bold ">Cantilever chair</h2>
-                                <h4 className="flex justify-center items-center text-[14px] text-myblue">Code - Y523201</h4>
-                                <h4 className="flex justify-center items-center text-[14px] text-myblue">$42.00</h4>
+                                <h4 className="flex justify-center items-center text-[18px] text-mypink font-bold ">Cantilever chair</h4>
+                                <span className="flex justify-center items-center text-[14px] text-myblue">Code - Y523201</span>
+                                <span className="flex justify-center items-center text-[14px] text-myblue">$42.00</span>
 
                             </div>
 
@@ -54,9 +54,9 @@ const Featured = () => {
                             </div>
 
                             <div className="space-y-2 pt-4">
-                                <h2 className="flex justify-center items-center text-[18px] text-mypink font-bold ">Cantilever chair</h2>
-                                <h4 className="flex justify-center items-center text-[14px] text-myblue">Code - Y523201</h4>
-                                <h4 className="flex justify-center items-center text-[14px] text-myblue">$42.00</h4>
+                                <h4 className="flex justify-center items-center text-[18px] text-mypink font-bold ">Cantilever chair</h4>
+                                <span className="flex justify-center items-center text-[14px] text-myblue">Code - Y523201</span>
+                                <span className="flex justify-center items-center text-[14px] text-myblue">$42.00</span>
 
                             </div>
 
@@ -70,9 +70,9 @@ const Featured = () => {
                             </div>
 
                             <div className="space-y-2 pt-4">
-                                <h2 className="flex justify-center items-center text-[18px] text-mypink font-bold ">Cantilever chair</h2>
-                                <h4 className="flex justify-center items-center text-[14px] text-myblue">Code - Y523201</h4>
-                                <h4 className="flex justify-center items-center text-[14px] text-myblue">$42.00</h4>
+                                <h4 className="flex justify-center items-center text-[18px] text-mypink font-bold ">Cantilever chair</h4>
+                                <span className="flex justify-center items-center text-[14px] text-myblue">Code - Y523201</span>
+                                <span className="flex justify-center items-center text-[14px] text-myblue">$42.00</span>
 
                             </div>
 

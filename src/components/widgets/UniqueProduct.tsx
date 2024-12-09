@@ -15,11 +15,13 @@ const UniqueProduct = () => {
 
                             <div>
                                 {/* Image */}
+
                                 <Image src={UniqueProduct1} alt="Product-image" className=" h-[550px] w-[509px]" />
                             </div>
 
                             <div className="w-[507px] space-y-5">
                                 {/* Text */}
+                                
                                 <h1 className="text-[35px] font-bold text-myblue">Unique Features Of leatest &
                                     Trending Poducts</h1>
 
