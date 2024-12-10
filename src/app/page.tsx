@@ -1,4 +1,5 @@
 
+import DiscountItem from "<@>/components/widgets/DiscountItem";
 import Featured from "<@>/components/widgets/Featured";
 import Hero from "<@>/components/widgets/Hero";
 import LatestProducts from "<@>/components/widgets/LatestProducts";
@@ -15,6 +16,7 @@ export default function Home() {
     <SupportSection />
     <UniqueProduct />
     <TrendingProducts />
+    <DiscountItem />
     </>
   );
 }
