@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         myviolet: "#7E33E0",
+        myyellow: "#FFA454",
         mywhite: "#F1F1F1",
         mypink: "#FB2E86",
         pink2:  "#ECD2FA",
