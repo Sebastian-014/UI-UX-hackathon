@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { FiPhoneCall } from "react-icons/fi";
 import { LuHeart, LuUser } from "react-icons/lu";
 import { MdOutlineEmail } from "react-icons/md";
@@ -20,7 +21,7 @@ const Topheader = () => {
             <ul className="flex items-center gap-x-3 cursor-pointer">
               <li>English</li><RiArrowDropDownLine size="20" />
               <li>USD</li><RiArrowDropDownLine size="20" />
-              <li>Login</li><LuUser size="20" />
+              <Link href="/login"><li>Login</li></Link><LuUser size="20" />
               <li>Wishlist</li><LuHeart size="20" />
               <br />
               <PiShoppingCartSimpleBold size="20" />

@@ -4,11 +4,36 @@ import TopCategories2 from "/public/images/top-categories2.png"
 import TopCategories3 from "/public/images/top-categories3.png"
 import TopCategories4 from "/public/images/top-categories4.png"
 import TopCategoriesbg from "/public/images/top-categories-bg.png"
-import LogosImg from "/public/images/logos-img.png"
 import Image from "next/image"
 import Button from "../shared/Button"
+import BottomLogos from "../shared/BottomLogos"
 
 const TopCategories = () => {
+
+    const topCategoriesData = [
+
+        {
+            name: "Mini LCW Chair",
+            price: "$56.00",
+            image: TopCategories1,
+        },
+        {
+            name: "Mini LCW Chair",
+            price: "$56.00",
+            image: TopCategories2,
+        },
+        {
+            name: "Mini LCW Chair",
+            price: "$56.00",
+            image: TopCategories3,
+        },
+        {
+            name: "Mini LCW Chair",
+            price: "$56.00",
+            image: TopCategories4,
+        },
+    ]
+
     return (
         <>
             <div>
@@ -17,67 +42,30 @@ const TopCategories = () => {
 
                 <div className="flex justify-center gap-x-5 pt-10">
 
-                    <div className="h-[345px] w-[269px]">
-                        <div className="h-[269px] w-[269px] bg-gray6 rounded-full flex justify-center items-center shadow-md cursor-pointer hover:scale-105 duration-100">
-                            {/* Image */}
-                            <div>
-                                <Image src={TopCategories1} alt="Product-image" className=" h-[178px] w-[178px]" />
-                            </div>
-                        </div>
+                    {/* Boxes */}
 
-                        <div className="space-y-2 pt-2">
-                            <h4 className="text-[20px] text-myblue flex justify-center">Mini LCW Chair</h4>
-                            <span className="text-[16px] text-myblue flex justify-center">$56.00</span>
-                        </div>
+                    {
+                        topCategoriesData.map((item, i) => (
+                            (<div key={i} className="h-[345px] w-[269px]">
+                                <div className="h-[269px] w-[269px] bg-gray6 rounded-full flex justify-center items-center shadow-md cursor-pointer hover:scale-105 duration-100">
+                                    {/* Image */}
+                                    <div>
+                                        <Image src={item.image} alt="Product-image" className=" h-[170px] w-[170px]" />
+                                    </div>
+                                </div>
 
-                    </div>
+                                <div className="space-y-2 pt-2">
+                                    <h4 className="text-[20px] text-myblue flex justify-center">{item.name}</h4>
+                                    <span className="text-[16px] text-myblue flex justify-center">{item.price}</span>
+                                </div>
 
-                    <div className="h-[345px] w-[269px]">
-                        <div className="h-[269px] w-[269px] bg-gray6 rounded-full flex justify-center items-center shadow-md cursor-pointer hover:scale-105 duration-100">
-                            {/* Image */}
-                            <div>
-                                <Image src={TopCategories2} alt="Product-image" className=" h-[158px] w-[157px]" />
-                            </div>
-                        </div>
+                            </div>)
 
-                        <div className="space-y-2 pt-2">
-                            <h4 className="text-[20px] text-myblue flex justify-center">Mini LCW Chair</h4>
-                            <span className="text-[16px] text-myblue flex justify-center">$56.00</span>
-                        </div>
-
-                    </div>
-
-                    <div className="h-[345px] w-[269px]">
-                        <div className="h-[269px] w-[269px] bg-gray6 rounded-full flex justify-center items-center shadow-md cursor-pointer hover:scale-105 duration-100">
-                            {/* Image */}
-                            <div>
-                                <Image src={TopCategories3} alt="Product-image" className=" h-[149px] w-[149px]" />
-                            </div>
-                        </div>
-
-                        <div className="space-y-2 pt-2">
-                            <h4 className="text-[20px] text-myblue flex justify-center">Mini LCW Chair</h4>
-                            <span className="text-[16px] text-myblue flex justify-center">$56.00</span>
-                        </div>
-
-                    </div>
-
-                    <div className="h-[345px] w-[269px]">
-                        <div className="h-[269px] w-[269px] bg-gray6 rounded-full flex justify-center items-center shadow-md cursor-pointer hover:scale-105 duration-100">
-                            {/* Image */}
-                            <div>
-                                <Image src={TopCategories4} alt="Product-image" className=" h-[178px] w-[178px]" />
-                            </div>
-                        </div>
-
-                        <div className="space-y-2 pt-2">
-                            <h4 className="text-[20px] text-myblue flex justify-center">Mini LCW Chair</h4>
-                            <span className="text-[16px] text-myblue flex justify-center">$56.00</span>
-                        </div>
-
-                    </div>
+                        ))
+                    }
 
                 </div>
+
 
                 <div className="pt-40">
                     <div className="relative">
@@ -96,9 +84,7 @@ const TopCategories = () => {
 
                 </div>
 
-                <div className="flex justify-center pt-28">
-                    <Image src={LogosImg} alt="logos-image" className=" h-[93px] w-[904px]" />
-                </div>
+                <BottomLogos />
 
             </div>
         </>

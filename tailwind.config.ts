@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         myviolet: "#7E33E0",
+        mypurple: "#535399",
         myyellow: "#FFA454",
         mywhite: "#F1F1F1",
         mypink: "#FB2E86",
@@ -18,6 +19,9 @@ const config: Config = {
         pink4:  "#FCECF1",
         myblue: "#151875",
         myblue1: "#1A0B5B",
+        myblue3: "#3F509E",
+        myblue4: "#111C85",
+        myblue5: "#101750",
         myred:  "#FB2448",
         mygray: "#EEEFFB",    
         gray2: "#8A8FB9",
@@ -30,6 +34,8 @@ const config: Config = {
         gray9: "#ACABC3",
         gray10: "#F5F6F8",
         gray11: "#B7BACB",
+        gray12: "#9096B2",
+        gray13: "#FBFBFF",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },

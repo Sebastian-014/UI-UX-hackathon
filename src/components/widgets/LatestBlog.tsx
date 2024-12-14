@@ -7,6 +7,35 @@ import Image from "next/image"
 import { MdOutlineCalendarMonth } from "react-icons/md";
 
 const LatestBlog = () => {
+
+    const latestBlogData = [
+
+        {
+            name: "John",
+            date: "21 August,2020",
+            header: "Top esssential Trends in 2021",
+            description: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+            readmore: "Read More",
+            image: BlogImg1,
+        },
+        {
+            name: "Sam",
+            date: "21 August,2020",
+            header: "Top esssential Trends in 2021",
+            description: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+            readmore: "Read More",
+            image: BlogImg2,
+        },
+        {
+            name: "David",
+            date: "21 August,2020",
+            header: "Top esssential Trends in 2021",
+            description: "More off this less hello samlande lied much over tightly circa horse taped mightly",
+            readmore: "Read More",
+            image: BlogImg3,
+        },
+    ]
+
     return (
         <>
             <div>
@@ -15,57 +44,29 @@ const LatestBlog = () => {
 
                 <div className="flex justify-center gap-x-5 pt-10">
 
-                    <div className="h-[493px] w-[370px] border rounded-md shadow-md">
-                        <Image src={BlogImg1} alt="blog-image" className=" h-[255px] w-[370px] rounded-md" />
+                    {/* Boxes */}
 
-                        <div className="flex gap-x-5 text-[14px] text-myblue pt-3 ml-2">
-                            <span className="flex items-center"><FaPenNib className="text-mypink" /> &nbsp;John</span>
-                            <span className="flex items-center"><MdOutlineCalendarMonth className="text-myyellow" /> &nbsp;21 August,2020</span>
-                        </div>
+                    {
+                        latestBlogData.map((item, i) => (
 
-                        <div className="space-y-6 pt-6 ml-2">
-                            <h4 className="text-[18px] font-bold text-myblue">Top esssential Trends in 2021</h4>
-                            <p className="text-[16px] text-gray4 pb-4">More off this less hello samlande lied much
-                                over tightly circa horse taped mightly</p>
-                            <span className="text-[16px] text-myblue underline hover:text-mypink cursor-pointer" >Read More</span>
-                        </div >
+                            (<div key={i} className="h-[493px] w-[370px] border rounded-md shadow-md">
 
-                    </div>
+                            <Image src={item.image} alt="blog-image" className=" h-[255px] w-[370px] rounded-md" />
 
-                    <div className="h-[493px] w-[370px] border rounded-md shadow-md">
-                        <Image src={BlogImg2} alt="blog-image" className=" h-[255px] w-[370px] rounded-md" />
+                            <div className="flex gap-x-5 text-[14px] text-myblue pt-3 ml-2">
+                                <span className="flex items-center"><FaPenNib className="text-mypink" /> &nbsp;{item.name}</span>
+                                <span className="flex items-center"><MdOutlineCalendarMonth className="text-myyellow" /> &nbsp;{item.date}</span>
+                            </div>
 
-                        <div className="flex gap-x-5 text-[14px] text-myblue pt-3 ml-2">
-                            <span className="flex items-center"><FaPenNib className="text-mypink" /> &nbsp;Sam</span>
-                            <span className="flex items-center"><MdOutlineCalendarMonth className="text-myyellow" /> &nbsp;21 August,2020</span>
-                        </div>
+                            <div className="space-y-6 pt-6 ml-2">
+                                <h4 className="text-[18px] font-bold text-myblue">{item.header}</h4>
+                                <p className="text-[16px] text-gray4 pb-4">{item.description}</p>
+                                <span className="text-[16px] text-myblue underline hover:text-mypink cursor-pointer" >Read More</span>
+                            </div >
 
-                        <div className="space-y-6 pt-6 ml-2">
-                            <h4 className="text-[18px] font-bold text-myblue">Top esssential Trends in 2021</h4>
-                            <p className="text-[16px] text-gray4 pb-4">More off this less hello samlande lied much
-                                over tightly circa horse taped mightly</p>
-                            <span className="text-[16px] text-myblue underline hover:text-mypink cursor-pointer" >Read More</span>
-                        </div >
-
-                    </div>
-
-                    <div className="h-[493px] w-[370px] border rounded-md shadow-md">
-                        <Image src={BlogImg3} alt="blog-image" className=" h-[255px] w-[370px] rounded-md" />
-
-                        <div className="flex gap-x-5 text-[14px] text-myblue pt-3 ml-2">
-                            <span className="flex items-center"><FaPenNib className="text-mypink" /> &nbsp;David</span>
-                            <span className="flex items-center"><MdOutlineCalendarMonth className="text-myyellow" /> &nbsp;21 August,2020</span>
-                        </div>
-
-                        <div className="space-y-6 pt-6 ml-2">
-                            <h4 className="text-[18px] font-bold text-myblue">Top esssential Trends in 2021</h4>
-                            <p className="text-[16px] text-gray4 pb-4">More off this less hello samlande lied much
-                                over tightly circa horse taped mightly</p>
-                            <span className="text-[16px] text-myblue underline hover:text-mypink cursor-pointer" >Read More</span>
-                        </div >
-
-                    </div>
-
+                        </div>)
+                        ))
+                    }
 
                 </div>
 
