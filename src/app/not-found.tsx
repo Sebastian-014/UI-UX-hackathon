@@ -1,6 +1,8 @@
+
 import BottomLogos from "<@>/components/shared/BottomLogos"
 import Button from "<@>/components/shared/Button"
 import Wrapper from "<@>/components/shared/Wrapper"
+import Link from "next/link"
 
 
 const notFound = () => {
@@ -17,7 +19,7 @@ const notFound = () => {
                 {/* Button */}
 
                 <div className="flex justify-center items-center">
-                    <Button text={"Back To Home"} />
+                    <Link href="/"><Button text={"Back To Home"} /></Link>
                 </div>
 
                 <div>

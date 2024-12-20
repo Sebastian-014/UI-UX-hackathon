@@ -5,6 +5,7 @@ import BlogImg2 from "/public/images/latest-blog2.png"
 import BlogImg3 from "/public/images/latest-blog3.png"
 import Image from "next/image"
 import { MdOutlineCalendarMonth } from "react-icons/md";
+import Wrapper from "../shared/Wrapper";
 
 const LatestBlog = () => {
 
@@ -38,39 +39,43 @@ const LatestBlog = () => {
 
     return (
         <>
-            <div>
+            <Wrapper>
+                <div>
 
-                <h1 className="flex justify-center items-center text-myblue text-[42px] font-bold pt-40">Leatest Blog</h1>
+                    <h1 className="flex justify-center items-center text-myblue text-[26px] md:text-[42px] font-bold pt-40">Leatest Blog</h1>
 
-                <div className="flex justify-center gap-x-5 pt-10">
+                    <div className="md:flex justify-center gap-6 pt-5 md:pt-10">
+                        {/* Boxes */}
+                        {
+                            latestBlogData.map((item, i) => (
+                                <div key={i} className="w-full md:w-1/2 lg:w-1/3 mb-4">
 
-                    {/* Boxes */}
+                                    <div className="h-[340px] md:h-[490px] w-full border rounded-md shadow-md">
 
-                    {
-                        latestBlogData.map((item, i) => (
+                                        <Image src={item.image} alt="blog-image" className="h-[180px] md:h-[255px] w-full rounded-md" />
 
-                            (<div key={i} className="h-[493px] w-[370px] border rounded-md shadow-md">
+                                        <div className="flex gap-x-2 md:gap-x-5 text-[10px] md:text-[14px] text-myblue pt-3 ml-2">
+                                            <span className="flex items-center"><FaPenNib className="text-mypink" /> &nbsp;{item.name}</span>
+                                            <span className="flex items-center"><MdOutlineCalendarMonth className="text-myyellow" /> &nbsp;{item.date}</span>
+                                        </div>
 
-                            <Image src={item.image} alt="blog-image" className=" h-[255px] w-[370px] rounded-md" />
+                                        <div className=" space-y-3 md:space-y-6 pt-3 md:pt-6 mx-2">
+                                            <h4 className="text-[14px] md:text-[18px] font-bold text-myblue">{item.header}</h4>
+                                            <p className="text-[12px] md:text-[16px] text-gray4 pb-4">{item.description}</p>
+                                            <span className="text-[12px] md:text-[16px] text-myblue underline hover:text-mypink cursor-pointer" >Read More</span>
+                                        </div >
 
-                            <div className="flex gap-x-5 text-[14px] text-myblue pt-3 ml-2">
-                                <span className="flex items-center"><FaPenNib className="text-mypink" /> &nbsp;{item.name}</span>
-                                <span className="flex items-center"><MdOutlineCalendarMonth className="text-myyellow" /> &nbsp;{item.date}</span>
-                            </div>
+                                    </div>
 
-                            <div className="space-y-6 pt-6 ml-2">
-                                <h4 className="text-[18px] font-bold text-myblue">{item.header}</h4>
-                                <p className="text-[16px] text-gray4 pb-4">{item.description}</p>
-                                <span className="text-[16px] text-myblue underline hover:text-mypink cursor-pointer" >Read More</span>
-                            </div >
+                                </div>
+                            ))
+                        }
 
-                        </div>)
-                        ))
-                    }
+                    </div>
+
 
                 </div>
-
-            </div>
+            </Wrapper>
         </>
     )
 }

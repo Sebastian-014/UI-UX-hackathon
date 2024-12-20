@@ -1,4 +1,5 @@
 
+
 import BottomLogos from "../shared/BottomLogos"
 import Wrapper from "../shared/Wrapper"
 
@@ -17,12 +18,12 @@ const Login = () => {
 
                                 <div className="space-y-4 pt-8">
 
-                                    <div className="flex items-center h-[52px] w-[432px] border rounded-md">
-                                        <input type="text" placeholder="Email Address" className="text-[17px] text-gray12 ml-2" />
+                                    <div>
+                                        <input type="text" placeholder="Email Address" required className="text-[17px] text-gray12 h-[52px] w-[432px] border rounded-md pl-2" />
                                     </div>
 
-                                    <div className="flex items-center h-[52px] w-[432px] border rounded-md">
-                                        <input type="text" placeholder="Password" className="text-[17px] text-gray12 ml-2" />
+                                    <div>
+                                        <input type="text" placeholder="Password" required className="text-[17px] text-gray12 h-[52px] w-[432px] border rounded-md pl-2" />
                                     </div>
 
                                 </div>

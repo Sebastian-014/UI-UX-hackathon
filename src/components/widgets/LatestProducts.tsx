@@ -9,131 +9,124 @@ import LatestProduct6 from "/public/images/latest-product6.png"
 import Image from "next/image"
 
 const LatestProducts = () => {
+
+    // First Row
+
+    const latestProductData1 = [
+
+        {
+            name: "Comfort Handy Craft",
+            price: "$42.00",
+            oldPrice: "$65.00",
+            image: LatestProduct1,
+        },
+        {
+            name: "Comfort Handy Craft",
+            price: "$42.00",
+            oldPrice: "$65.00",
+            image: LatestProduct2,
+        },
+        {
+            name: "Comfort Handy Craft",
+            price: "$42.00",
+            oldPrice: "$65.00",
+            image: LatestProduct3,
+        },
+    ]
+
+    // Second row
+
+    const latestProductData2 = [
+
+        {
+            name: "Comfort Handy Craft",
+            price: "$42.00",
+            oldPrice: "$65.00",
+            image: LatestProduct4,
+        },
+        {
+            name: "Comfort Handy Craft",
+            price: "$42.00",
+            oldPrice: "$65.00",
+            image: LatestProduct5,
+        },
+        {
+            name: "Comfort Handy Craft",
+            price: "$42.00",
+            oldPrice: "$65.00",
+            image: LatestProduct6,
+        },
+    ]
+
     return (
         <>
             <section>
                 <Wrapper>
-                    <h1 className="flex justify-center items-center text-myblue text-[42px] font-bold pt-36">Leatest Products</h1>
-                    <div className="space-y-10 pt-8">
+                    <h1 className="flex justify-center items-center text-myblue text-[26px] md:text-[42px] font-bold pt-20 md:pt-40">Leatest Products</h1>
+                    <div className="space-y-5 md:space-y-10 pt-5 md:pt-10">
+
                         {/* First Row */}
-                        <div>
-                            <div className="flex justify-center gap-x-6">
 
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
-                                    <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
-                                        <div>
-                                            <Image src={LatestProduct1} alt="latestproduct-image" className=" h-[229px] w-[223px]" />
+                        <div className="md:flex justify-center gap-4 md:gap-6">
+
+                            {
+                                latestProductData1.map((item, i) => (
+                                    <div key={i} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3 px-2 mb-4">
+                                        <div className="h-[306px] w-full border rounded-md cursor-pointer">
+
+                                            <div className="h-[270px] w-full bg-gray7 flex justify-center items-center">
+                                                <div>
+                                                    <Image src={item.image} alt="latestproduct-image" className="h-[230px] w-[225px] mx-auto" />
+                                                </div>
+                                            </div>
+
+                                            <div className="flex justify-between mx-2 py-1">
+                                                <h4 className="text-[12px] sm:text-[14px] md:text-[16px] text-myblue">{item.name}</h4>
+                                                <ul className="flex items-center gap-x-2">
+                                                    <li className="text-[10px] sm:text-[12px] md:text-[14px] text-myblue">{item.price}</li>
+                                                    <li className="text-[8px] sm:text-[10px] md:text-[12px] text-myred line-through">{item.oldPrice}</li>
+                                                </ul>
+                                            </div>
+
                                         </div>
-
                                     </div>
-                                    <div className="flex justify-between mx-2 py-1">
-                                        <h4 className="text-[14px] text-myblue">Comfort Handy Craft</h4>
-                                        <ul className="flex items-center gap-x-2">
-                                            <li className="text-[14px] text-myblue">$42.00</li>
-                                            <li className="text-[12px] text-myred line-through">$65.00</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div className="h-[306px] w-[360px] cursor-pointer">
-                                    <div className="h-[270px] w-[360px] bg-white flex justify-center items-center">
-                                        <div>
-                                            <Image src={LatestProduct2} alt="latestproduct-image" className=" h-[245px] w-[245px]" />
-                                        </div>
-
-                                    </div>
-                                    <div className="flex justify-between mx-2 py-1">
-                                        <h4 className="text-[14px] text-myblue">Comfort Handy Craft</h4>
-                                        <ul className="flex items-center gap-x-2">
-                                            <li className="text-[14px] text-myblue">$42.00</li>
-                                            <li className="text-[12px] text-myred line-through">$65.00</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
-                                    <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
-                                        <div>
-                                            <Image src={LatestProduct3} alt="latestproduct-image" className=" h-[222px] w-[222px]" />
-                                        </div>
-
-                                    </div>
-                                    <div className="flex justify-between mx-2 py-1">
-                                        <h4 className="text-[14px] text-myblue">Comfort Handy Craft</h4>
-                                        <ul className="flex items-center gap-x-2">
-                                            <li className="text-[14px] text-myblue">$42.00</li>
-                                            <li className="text-[12px] text-myred line-through">$65.00</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                            </div>
+                                ))
+                            }
 
                         </div>
+
 
                         {/* Second Row */}
 
-                        <div>
+                        <div className="md:flex justify-center gap-4 md:gap-6">
 
-                            <div className="flex justify-center gap-x-6">
+                            {
+                                latestProductData2.map((item, i) => (
 
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
-                                    <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
-                                        <div>
-                                            <Image src={LatestProduct4} alt="latestproduct-image" className=" h-[267px] w-[277px]" />
+                                    (<div key={i} className="w-full md:w-1/2 lg:w-1/3 px-2 mb-4">
+
+                                        <div className="h-[306px] w-full border rounded-md cursor-pointer">
+                                            <div className="h-[270px] w-full bg-gray7 flex justify-center items-center">
+                                                <div>
+                                                    <Image src={item.image} alt="latestproduct-image" className="h-[265px] w-[275px] mx-auto" />
+                                                </div>
+
+                                            </div>
+                                            <div className="flex justify-between mx-2 py-1">
+                                                <h4 className="text-[12px] sm:text-[14px] md:text-[16px] text-myblue">{item.name}</h4>
+                                                <ul className="flex items-center gap-x-2">
+                                                    <li className="text-[10px] sm:text-[12px] md:text-[14px] text-myblue">{item.price}</li>
+                                                    <li className="text-[8px] sm:text-[10px] md:text-[12px] text-myred line-through">{item.oldPrice}</li>
+                                                </ul>
+                                            </div>
                                         </div>
 
-                                    </div>
-                                    <div className="flex justify-between mx-2 py-1">
-                                        <h4 className="text-[14px] text-myblue">Comfort Handy Craft</h4>
-                                        <ul className="flex items-center gap-x-2">
-                                            <li className="text-[14px] text-myblue">$42.00</li>
-                                            <li className="text-[12px] text-myred line-through">$65.00</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
-                                    <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
-                                        <div>
-                                            <Image src={LatestProduct5} alt="latestproduct-image" className=" h-[303px] w-[264px]" />
-                                        </div>
-
-                                    </div>
-                                    <div className="flex justify-between mx-2 py-1">
-                                        <h4 className="text-[14px] text-myblue">Comfort Handy Craft</h4>
-                                        <ul className="flex items-center gap-x-2">
-                                            <li className="text-[14px] text-myblue">$42.00</li>
-                                            <li className="text-[12px] text-myred line-through">$65.00</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                                <div className="h-[306px] w-[360px] border rounded-md cursor-pointer">
-                                    <div className="h-[270px] w-[360px] bg-gray7 flex justify-center items-center">
-                                        <div>
-                                            <Image src={LatestProduct6} alt="latestproduct-image" className=" h-[229px] w-[223px]" />
-                                        </div>
-
-                                    </div>
-                                    <div className="flex justify-between mx-2 py-1">
-                                        <h4 className="text-[14px] text-myblue">Comfort Handy Craft</h4>
-                                        <ul className="flex items-center gap-x-2">
-                                            <li className="text-[14px] text-myblue">$42.00</li>
-                                            <li className="text-[12px] text-myred line-through">$65.00</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                            </div>
+                                    </div>)
+                                ))
+                            }
 
                         </div>
+
 
                     </div>
                 </Wrapper>
